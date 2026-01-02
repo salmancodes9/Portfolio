@@ -1,6 +1,7 @@
 import { MonitorCloud , Anchor , SquarePen , Contact ,BookText} from 'lucide-react';
 import Navbar from "../components/Navbar";
 import TechStack from './TechStack';
+import Projects from './Projects';
 // import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { useLoading } from '../context/LoadingContext';
@@ -10,16 +11,15 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { setLoading } = useLoading();
+  const { setloading } = useLoading();
 
 
   const handleNavigate = (path) => {
-  setLoading(true);
-
+  setloading(true);
   setTimeout(() => {
     navigate(path);
-    setLoading(false);
-  }, 800);
+    setloading(false);
+  }, 200);
 };
   return (
     <>
@@ -60,7 +60,7 @@ const Home = () => {
 
             <li className="flex items-center gap-2">
                 <Anchor />
-              <span>In my part time, I keep making some cool stuff which you can find here</span>
+              <span>In my part time, I keep making some cool stuff which you can find here<button onClick={() => handleNavigate("/Projects")} className='px-6 py-3 border rounded hover:bg-black hover:text-white'> projects</button> </span>
             </li>
             <li className="flex items-center gap-2">
                 <SquarePen />

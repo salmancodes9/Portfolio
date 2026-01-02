@@ -14,7 +14,6 @@ export function LoadingProvider({ children }) {
         </laodingContext.Provider>  
     );
 };
-// console.log(children);
 export function useLoading() {
   const context = useContext(laodingContext);
 
