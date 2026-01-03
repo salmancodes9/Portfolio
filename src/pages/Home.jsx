@@ -19,7 +19,7 @@ const Home = () => {
   setTimeout(() => {
     navigate(path);
     setloading(false);
-  }, 200);
+  }, 1500);
 };
   return (
     <>
@@ -47,32 +47,32 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="Quick_intro_section" className="min-h-screen">
-        <div id="" className=" max-w-7xl mx-auto  px-24 py-15 ">
+      <section id="Quick_intro_section" className="">
+        <div id="" className=" max-w-7xl mx-auto  px-24 py-1Z ">
           <h1 className="px-12"><strong className="text-2xl">Quick Detour</strong></h1>
           
-          <ul className="px-12 leadong-releaxed space-y-2 mt-6 text-[#364153] text-base md:text-lg">
+          <ul className="px-12 leading-relaxed space-y-4 mt-6 text-[#364153]  text-base">
             <li className="flex items-center gap-2">
                 <MonitorCloud />
-              <span>Peek into the technology stack I use  <button onClick={() => handleNavigate("/tech-stack")} className='px-6 py-3 border rounded hover:bg-black hover:text-white'> tech-stack</button></span>
+              <span>Peek into the technology stack I use  <button onClick={() => handleNavigate("/tech-stack")} className=' cursor-pointer underline text-[#390ee4]'> tech-stack</button></span>
             </li>
             
 
             <li className="flex items-center gap-2">
                 <Anchor />
-              <span>In my part time, I keep making some cool stuff which you can find here<button onClick={() => handleNavigate("/Projects")} className='px-6 py-3 border rounded hover:bg-black hover:text-white'> projects</button> </span>
+              <span>In my part time, I keep making some cool stuff which you can find here <button onClick={() => handleNavigate("/Projects")} className= ' cursor-pointer underline text-[#390ee4]'> projects</button> </span>
             </li>
             <li className="flex items-center gap-2">
                 <SquarePen />
-              <span>I blog about my personal learnings</span>
+              <span>I blog about my personal learnings <button onClick={() => handleNavigate("/Projects")} className=' cursor-pointer underline text-[#390ee4]'> Blogs</button> </span>
             </li>
             <li className="flex items-center gap-2">
                 <Contact />
-              <span>You can reach out to me via the contact section</span>
+              <span>You can reach out to me via the contact section <button onClick={() => handleNavigate("/Projects")} className=' cursor-pointer underline text-[#390ee4]'> Contact-me</button> </span>
             </li>
             <li className="flex items-center gap-2">
                 <BookText/>
-              <span>I actively maintain a list of books I read</span>
+              <span>I actively maintain a list of books I read <button onClick={() => handleNavigate("/Projects")} className=' cursor-pointer underline text-[#390ee4]'> Reading-books</button> </span>
             </li>
           </ul>
         </div>

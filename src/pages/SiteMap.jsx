@@ -7,13 +7,15 @@ export default function Sitemap() {
   return (
     
 <>
+<div className=' h-20'>
  <Navbar />
-    <div className=" bg-amber-50 p-8 ">
+ </div>
+    <div className="bg-amber-550 p-8 ">
        
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4 flex items-center gap-3 MB-8 bg-black">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center gap-3  ">
             Sitemap 
             <span className="text-3xl">🔗</span>
           </h1>
@@ -102,7 +104,8 @@ export default function Sitemap() {
         </nav>
       </div>
       </div>
-      <Footer />  
+
+      <Footer/>  
     </>
     
   );

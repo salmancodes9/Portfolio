@@ -13,7 +13,7 @@ const RouteChangeLoader = () => {
     const timer = setTimeout(() => {
         setloading(false);
         
-    }, 500);
+    }, 100);
     // console.log(loacation.pathname);
 
 

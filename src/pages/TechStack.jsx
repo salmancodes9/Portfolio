@@ -69,7 +69,7 @@ console.log(activeSection);
           id="frontend"
           className="scroll-mt-32 max-w-2xl"
         >
-          <h2 className="text-3xl font-bold mb-8">Frontend</h2>
+          <h2 className="text-3xl font-bold mb-8">Frontend <span className="text-3xl ">🔗</span></h2>
 
           <p className="max-w-prose mb-6">
             I start by creating wireframes and skeleton mockups using simple
@@ -99,7 +99,7 @@ console.log(activeSection);
           id="Tools"
           className="scroll-mt-32 max-w-2xl"
         >
-          <h2 className="text-3xl font-bold mb-8">Tools</h2>
+          <h2 className="text-3xl font-bold mb-8">Tools <span className="text-3xl ">🔗</span></h2>
           <p> I use a variety of tools to enhance my development workflow and
               ensure code quality. These include:</p>
 
@@ -115,7 +115,7 @@ console.log(activeSection);
           id="Other"
           className="scroll-mt-32 max-w-2xl mb-36"
         >
-          <h2 className="text-3xl font-bold mb-8">Others</h2>
+          <h2 className="text-3xl font-bold mb-8">Others <span className="text-3xl ">🔗</span></h2>
 
           <ul className="list-disc pl-5 space-y-2">
             <li>Postman</li>
