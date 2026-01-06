@@ -1,75 +1,80 @@
 import { Github, Linkedin, Twitter, Mail, Instagram } from "lucide-react";
-import signatureSVG from "../assets/images/signatures/sign.svg";
+import signatureSVG from "../assets/images/signatures/signblu.svg";
 
 const Footer = () => {
+
+  const renderTime = new Date() .toUTCString();
   const Socials = [
     { icon: Github, href: "https://github.com/yourusername" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yourusername" },
+    { icon: Linkedin, href: "https://linkedin.com/in/salmancodes9" },
     { icon: Twitter, href: "https://twitter.com/yourusername" },
     { icon: Instagram, href: "https://instagram.com/yourusername" },
     { icon: Mail, href: "mailto:your.email@example.com" },
   ];
   return (
-    <>
-      <div className=" flex justify-between bg-amber-0 max-w-7xl mx-auto px-28 py-10 text-black ">
-        <section id="left-side " className="">
-          <div className="">
-            <h1 className=" flex flex-col jus leading-none m-0 font-black text-2xl tracking-tighter flex bg-amber-00">
-              SalmanNissar <strong className="bg-lack ml-4"></strong>
-            </h1>
-            <h6 className=" m-0 text-xs  tracking-tighter bg-amber-00 ">
-              Code for World Wide Web
-            </h6>
-            
+   <div className="bg-[#fff4e5]">
+  <div className="max-w-7xl mx-auto px-30 py-10">
+    <div className="grid grid-cols-[auto_1fr] gap-48">
 
-            <div className="flex gap-4 mt-8 shake-hover">
-              {Socials.map(({ icon: Icon, href }) => (
-                <a
-                  key={href}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
+      {/* LEFT */}
+      <section>
+        <div>
+          <div className="flex items-start ">
+            <div className="mt-4">
+              <h1 className="font-black text-2xl tracking-tighter leading-none">
+                SalmanNissar
+              </h1>
+              <h6 className="text-xs tracking-tighter">
+                Code for World Wide Web
+              </h6>
             </div>
-            <div>
-              <img
-                src={signatureSVG}
-                alt="Signature"
-                className="w-32 h-auto"
-                style={{ filter: "hue-rotate(210deg) saturate(1.5)" }}
-              />
-              <p className="text-xs mt-8">
-                @ 2025 Salman Nissar. All rights reserved.
-              </p>
-              <p>Render timing coming soon</p>
-            </div>
+            <img
+              src={signatureSVG}
+              alt="Signature"
+              className="w-40 h-auto"
+              style={{ filter: ""}}
+            />
           </div>
-        </section>
-        <section id="right_side " className="bg-amber-00 mx-auto ">
-          <div>
-            <h1 className="mt-4 ">Sitemap</h1>
 
-            <ul className="  flex gap-6 mt-6  ">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <a href="/projects">Projects</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
-            </ul>
+
+
+
+          <div className="flex gap-4 mt-8">
+            {Socials.map(({ icon: Icon, href }) => (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-500 hover:[transform:rotateY(360deg)] hover:text-[#7910ea]"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
           </div>
-        </section>
-      </div>
-    </>
+
+          <p className="text-xs mt-8">
+            © 2025 Salman Nissar. All rights reserved.
+          </p>
+          <p className=" text-xs ">Rendered at: {renderTime}</p>
+        </div>
+      </section>
+
+      {/* RIGHT */}
+      <section className="ml-32">
+        <h1 className="mt-1 font-medium text-xl">Sitemap</h1>
+        <ul className="flex gap-6 mt-6 text-sm underline text-[#4807ef]">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</div>
+
   );
 };
 

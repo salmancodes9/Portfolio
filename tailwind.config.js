@@ -11,6 +11,7 @@ export default {
           "60%": { transform: "translateX(-2px)" },
           "80%": { transform: "translateX(2px)" },
         },
+         
       },
       animation: {
         shake: "shake 0.35s ease-in-out",
