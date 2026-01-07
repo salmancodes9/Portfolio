@@ -16,7 +16,7 @@ const Footer = () => {
   <div className="max-w-7xl mx-auto px-30 py-10">
     <div className="grid grid-cols-[auto_1fr] gap-48">
 
-      {/* LEFT */}
+      {/* LEFT  Side*/}
       <section>
         <div>
           <div className="flex items-start ">
